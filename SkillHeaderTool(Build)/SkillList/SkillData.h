@@ -10,9 +10,11 @@ const enum class SkillType {
 	Rocket, GhostMagic, PowerShield, Adrenaline, 
 	EdgeMace, BackAttack, HeadAttack, Absorb, 
 	EdgeKnife, FastFast, MastersPower, FocusOnMe, 
-	ManaFlow, Bombman, AngleBless, PowerFist, 
+	ManaFlow, Bombman, AngelBless, PowerFist, 
 	BrokenBone, Runner, Thunder, Bully, 
-	StrongMind, BreakShield, 
+	StrongMind, BreakShield, HitMan, Emergency, 
+	Captin, Efficiency, Fortitude, SuperCharge, 
+	Win, Stable, Ether, 
 };
 
 const map<SkillType, string> SkillDictionary = {
@@ -34,7 +36,7 @@ const map<SkillType, string> SkillDictionary = {
 	{ SkillType::Adrenaline, "아드레날린" },
 	{ SkillType::EdgeMace, "예리한 둔기" },
 	{ SkillType::BackAttack, "기습의 대가" },
-	{ SkillType::HeadAttack, "타격의 대가" },
+	{ SkillType::HeadAttack, "결투의 대가" },
 	{ SkillType::Absorb, "정기 흡수" },
 	{ SkillType::EdgeKnife, "정밀 단도" },
 	{ SkillType::FastFast, "속전속결" },
@@ -42,14 +44,23 @@ const map<SkillType, string> SkillDictionary = {
 	{ SkillType::FocusOnMe, "시선 집중" },
 	{ SkillType::ManaFlow, "마나의 흐름" },
 	{ SkillType::Bombman, "폭발물 전문가" },
-	{ SkillType::AngleBless, "여신의 가호" },
+	{ SkillType::AngelBless, "여신의 가호" },
 	{ SkillType::PowerFist, "분쇄의 주먹" },
 	{ SkillType::BrokenBone, "부러진 뼈" },
 	{ SkillType::Runner, "탈출의 명수" },
 	{ SkillType::Thunder, "번개의 분노" },
 	{ SkillType::Bully, "약자 무시" },
 	{ SkillType::StrongMind, "굳은 의지" },
-	{ SkillType::BreakShield, "쉴드 관통" },
+	{ SkillType::BreakShield, "실드 관통" },
+	{ SkillType::HitMan, "타격의 대가" },
+	{ SkillType::Emergency, "긴급구조" },
+	{ SkillType::Captin, "돌격대장" },
+	{ SkillType::Efficiency, "마나 효율 증가" },
+	{ SkillType::Fortitude, "불굴" },
+	{ SkillType::SuperCharge, "슈퍼 차지" },
+	{ SkillType::Win, "승부사" },
+	{ SkillType::Stable, "안정된 상태" },
+	{ SkillType::Ether, "에테르 포식자" },
 };
 
-const int maxCount = 34;
+const int maxCount = 43;
